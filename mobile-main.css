@@ -10,7 +10,10 @@
     }
 
     #mobile-logo{
-        display: inline-block;
+		display: inline-block;
+		position:absolute;
+		top:2em;
+		left:10%;
     }
 
     #mobile-logobutton{
