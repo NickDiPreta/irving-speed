@@ -34,14 +34,15 @@
     }
 
     #hamburger-image{
-        width: 20%;
-        height: 20%;
-        margin-right: 0;
-        margin-left: 3em;
+        width: 3em;
+        height: auto;
+		margin-left: 0em;
     }
 
     #hamburger-icon{
-        display: inline-block;
+		display: inline-block;
+		margin-left:-2.5em;
+		overflow-x:hidden;
     }
 
     #container{
@@ -83,7 +84,8 @@
         flex-direction: row;
         /* border-bottom: 0.5px solid grey; */
         background-color: white;
-        z-index: 10;
+		z-index: 10;
+		overflow:hidden;
     }
 
     #header{
@@ -153,10 +155,10 @@
 	}
 
 	.column{
-		width:95%;
+		width:100%;
 		box-shadow:0 .2em 2em .2em rgba(0, 0, 0, 0.1);
 		border-radius: 1.25em;
-		margin:2em 0em;
+		margin:2em 0em 0em 0em;
 		background-color:white;
 	}
 
