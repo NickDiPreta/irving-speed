@@ -462,6 +462,8 @@ img {
 
     #mobile-logo{
         display: inline-block;
+        position:absolute;
+		left:10%;
     }
 
     #mobile-logobutton{
@@ -533,6 +535,8 @@ img {
         /* border-bottom: 0.5px solid grey; */
         background-color: white;
         z-index: 10;
+        overflow:hidden;
+		vertical-align: middle;
     }
 
     #header{
