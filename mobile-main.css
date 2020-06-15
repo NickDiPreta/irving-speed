@@ -1,11 +1,90 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 415px) {
-	body{font-size:12px;}
 
-	#header{
-		height:3em;
-	}
-	/*landing*/
+	body{
+        margin: 0px;
+        width: 100%;
+        font-size:12px;
+    }
+
+    #mobile-logo{
+        display: inline-block;
+    }
+
+    #mobile-logobutton{
+        width: 30%;
+        height: auto;
+    }
+    
+    #hamburger-menu{
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
+        top: 10%;
+    }
+
+    a{
+        margin-right: none;
+    }
+
+    #hamburger-image{
+        width: 20%;
+        height: 20%;
+        margin-right: 0;
+        margin-left: 3em;
+    }
+
+    #hamburger-icon{
+        display: inline-block;
+    }
+
+    #container{
+        margin-top: 16%;
+    }
+
+    .navbutton{
+        background-color: white;
+        height: 2em;
+        width: 100%;
+        border-top: thin solid #f0f0f0;
+        border-bottom: thin solid #f0f0f0;
+        margin: auto;
+        line-height: 1em;
+        display: table-column;
+        padding-bottom:1em;
+        font-family: TT Norms Pro;
+        font-size:2em;
+    }
+
+    .navbutton{
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #mobile-header{
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        left: 0;
+        top: 0;
+        padding-left: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        /* border-bottom: 0.5px solid grey; */
+        background-color: white;
+        z-index: 10;
+    }
+
+    #header{
+        display: none;
+    }
 
 	#landing{
 		height:70em;
@@ -15,10 +94,7 @@
 		background-repeat: no-repeat;
 		background-size: 0%;
 		margin-bottom:0em;
-		margin-top:-2em;
 	}
-
-	/*landing text*/
 
 	.landingtext{
 		position:absolute;
@@ -54,17 +130,15 @@
 
 	#landingmockup{
 	width:95%;
-	/*padding-right:3em;*/
 	float:left;
-	z-index:1;
+    z-index:1;
+    padding-right: 0;
 	margin-top:35em;
 	margin-left:2em;
 	}
 
 	#features{
 		width:95%;
-		m/*argin-left:auto;
-		margin-right:auto;*/
 		margin-bottom:-5%;
 		display:flex;
 		flex-wrap:wrap;
@@ -123,14 +197,12 @@
 	}
 
 
-#banners{
-	margin-top:;
-	width:100%;
-	display:flex;
-	flex-direction:column;
-	justify-content: space-around;
-	z-index: 1;
-
+    #banners{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        z-index: 1;
 	}
 
 	.bannerpic{
@@ -138,10 +210,6 @@
 		height:auto;
 		margin-bottom:-8.5%;
 	}
-
-	/*.learnbannerpic{
-		margin-top:-5%;
-	}*/
 
 	#buildbanner{
 		width:100%;
@@ -201,5 +269,5 @@
 
 	#footer{
 		display:none;
-	}
+	} 
 }

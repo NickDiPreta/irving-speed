@@ -4,6 +4,8 @@
 	<title>Perch | Home</title>
 
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="mobile-main.css">
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="perchlogo.svg">
 	<meta name="keywords" content="personal, portfolio, design, product">
@@ -11,12 +13,11 @@
 	<meta charset="UTF-8">
 </head>
 <style>
-
-
-
 </style>
 
 <body>
+
+	<!-- web header -->
 	<div id="header">
 		<div id="getapp">
 			<a href="index.html" id="getappbutton"><p>Get App</p></a>
@@ -35,6 +36,31 @@
 		</div>
 
 		<a href="index.html" id="logobutton"><img src="perchlogo.svg" id="logo"></a>
+
+	</div>
+
+	<div id="mobile-header">
+		<div id="mobile-logo">
+			<a href="index.html"><img src="perchlogo.svg" id="mobile-logobutton"></a>
+		</div>
+
+		<div id="hamburger-icon" onclick="toggleMenu()">
+			<img src="hamburger.svg" id="hamburger-image">
+		</div>
+	</div>
+
+	<div id="hamburger-menu">
+		<div class="navbutton">
+			<a href="blog.html"><p>Blog</p></a>
+		</div>
+
+		<div class="navbutton">
+			<a href="about.html"><p>About</p></a>
+		</div>
+
+		<div class="navbutton">
+			<a href="how.html"><p>How It Works</p></a>
+		</div>
 	</div>
 
 	<div id=container>
@@ -150,5 +176,16 @@
 
 	
 </body>
+
+<script>
+function toggleMenu(){
+	if(document.getElementById("hamburger-menu").style.display == "none"){
+		document.getElementById("hamburger-menu").style.display = "flex"
+	}
+	else{
+		document.getElementById("hamburger-menu").style.display = "none"
+	}
+}
+</script>
 
 </html>
