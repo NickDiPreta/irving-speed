@@ -148,6 +148,9 @@ img {
 	left:4em;
 }
 
+#hamburger-menu{
+    display:none;
+}
 /*actual main shit*/
 
 #container{
@@ -210,6 +213,8 @@ img {
     padding-top:3em;
     float:right;
     z-index:1;
+    position:absolute;
+    right:.5em;
 }
 
 #why{
@@ -218,8 +223,8 @@ img {
     margin-left:auto;
     margin-right:auto;
     vertical-align: center;
-    margin-top:5em;
-    margin-bottom:4.5em;
+    margin-top:2em;
+    margin-bottom:5em;
 }
 
 #whypic{
@@ -339,7 +344,7 @@ img {
 
 #team{
     width:90%;
-    margin:10em auto 0em auto;
+    margin:6em auto 0em auto;
 }
 
 #teamtitle{
@@ -538,7 +543,7 @@ img {
     
     .landingtext{
         position:absolute;
-        top:30em;
+        top:33em;
         left:3em;
         width:90%;
         z-index:1;
@@ -707,7 +712,7 @@ img {
     
     #team{
         width:90%;
-        margin:55em auto 0em auto;
+        margin:45em auto 0em auto;
     }
     
     #teamtitle{
