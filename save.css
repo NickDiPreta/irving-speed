@@ -348,7 +348,9 @@ img {
 @media only screen and (max-width: 415px) {
 	body{font-size:12px;}
 	#mobile-logo{
-        display: inline-block;
+		display: inline-block;
+		position:absolute;
+		left:10%;
     }
 
     #mobile-logobutton{
@@ -372,14 +374,15 @@ img {
     }
 
     #hamburger-image{
-        width: 20%;
-        height: 20%;
-        margin-right: 0;
-        margin-left: 3em;
+        width: 3em;
+        height: auto;
+		margin-left: 0em;
     }
 
     #hamburger-icon{
-        display: inline-block;
+		display: inline-block;
+		position:absolute;
+		left:75%;
     }
 
     #container{
@@ -419,7 +422,9 @@ img {
         flex-direction: row;
         /* border-bottom: 0.5px solid grey; */
         background-color: white;
-        z-index: 10;
+		z-index: 10;
+		overflow:hidden;
+		vertical-align: middle;
     }
 
     #header{
