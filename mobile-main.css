@@ -41,8 +41,9 @@
 
     #hamburger-icon{
 		display: inline-block;
-		margin-left:-2.5em;
-		overflow-x:hidden;
+		position:absolute;
+		top:1.75em;
+		left:75%;
     }
 
     #container{
