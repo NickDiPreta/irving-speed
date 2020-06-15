@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="perchlogo.svg">
 	<meta name="keywords" content="credit, finance, college, students, build, free, report, rent, payment, payments, monthly, subscriptions, learn, financial, literacy">
-	<meta name="description" content="June Moon's personal portfolio">
+	<meta name="description" content="Build credit fast">
 	<meta charset="UTF-8">
 </head>
 <style>
@@ -37,6 +37,30 @@
 		<a href="index.html" id="logobutton"><img src="perchlogo.svg" id="logo"></a>
 	</div>
 
+	<div id="mobile-header">
+		<div id="mobile-logo">
+			<a href="index.html"><img src="perchlogo.svg" id="mobile-logobutton"></a>
+		</div>
+
+		<div id="hamburger-icon" onclick="toggleMenu()">
+			<img src="hamburger.svg" id="hamburger-image">
+		</div>
+	</div>
+
+	<div id="hamburger-menu">
+		<div class="navbutton">
+			<a href="blog.html"><p>Blog</p></a>
+		</div>
+
+		<div class="navbutton">
+			<a href="about.html"><p>About</p></a>
+		</div>
+
+		<div class="navbutton">
+			<a href="how.html"><p>How It Works</p></a>
+		</div>
+	</div>
+
 	<div id=container>
 		<div id=landing>
 
@@ -53,9 +77,6 @@
 					<p>Let your rent help you out.</p>
 				</div>
 
-				<img src="appstore.svg" id="applestorepic">
-				<img src="googleplay.svg" id="googleplaypic">
-
 			</div>
 		</div>
 
@@ -64,11 +85,14 @@
 			<div class="row">
 				<div class="lefttext">
 					<div class="lefttitle">
-						<p>Keep paying your rent</p>
+						Sign up 
+
+Keep checking your Perch Credit app and see how much your score increases
+						<p>Connect your bank account and upload your lease</p>
 					</div>
 
 					<div class="leftsubtitle">
-						<p>Stay on top of your monthly rent payments as usual and we will take care of sending the data to the credit bureaus</p>
+						<p>Continue to pay rent on time</p>
 					</div>
 				</div>
 				<div class="rightpic"><img src="howpics/sport.svg"></div>
@@ -79,11 +103,11 @@
 
 				<div id="righttext">
 					<div id="righttitle">
-						<p>Report to Credit Bureaus</p>
+						<p>Stay on top of your monthly payments as usual.</p>
 					</div>
 					
 					<div id="rightsubtitle">
-						<p>We send your proof of rent to the major credit bureaus to start building your credit</p>
+						<p>Sit back, relax and watch your credit grow</p>
 					</div>
 				</div>
 			</div>
@@ -149,5 +173,14 @@
 
 	
 </body>
-
+<script>
+	function toggleMenu(){
+		if(document.getElementById("hamburger-menu").style.display == "none"){
+			document.getElementById("hamburger-menu").style.display = "flex"
+		}
+		else{
+			document.getElementById("hamburger-menu").style.display = "none"
+		}
+	}
+</script>
 </html>

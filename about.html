@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="perchlogo.svg">
 	<meta name="keywords" content="credit, finance, college, students, build, free, report, rent, payment, payments, monthly, subscriptions, learn, financial, literacy">
-	<meta name="description" content="June Moon's personal portfolio">
+	<meta name="description" content="Build credit fast- all it takes is paying your rent. We'll handle the rest.">
 	<meta charset="UTF-8">
 </head>
 <style>
@@ -17,6 +17,7 @@
 </style>
 
 <body>
+
 	<div id="header">
 		<div id="getapp">
 			<a href="index.html" id="getappbutton"><p>Get App</p></a>
@@ -35,6 +36,30 @@
 		</div>
 
 		<a href="index.html" id="logobutton"><img src="perchlogo.svg" id="logo"></a>
+	</div>
+
+	<div id="mobile-header">
+		<div id="mobile-logo">
+			<a href="index.html"><img src="perchlogo.svg" id="mobile-logobutton"></a>
+		</div>
+
+		<div id="hamburger-icon" onclick="toggleMenu()">
+			<img src="hamburger.svg" id="hamburger-image">
+		</div>
+	</div>
+
+	<div id="hamburger-menu">
+		<div class="navbutton">
+			<a href="blog.html"><p>Blog</p></a>
+		</div>
+
+		<div class="navbutton">
+			<a href="about.html"><p>About</p></a>
+		</div>
+
+		<div class="navbutton">
+			<a href="how.html"><p>How It Works</p></a>
+		</div>
 	</div>
 
 	<div id=container>
@@ -90,7 +115,7 @@
 					</div>
 
 					<div id="bigpicsubtitle">
-						<p>Sed tristique nibh eu accumsan rhoncus. Sed vehicula tortor nibh. Suspendisse iaculis risus vehicula tristique molestie. Donec lacinia lectus diam.Sed tristique nibh eu accumsan rhoncus. Sed vehicula tortor nibh. Suspendisse iaculis risus vehicula tristique molestie. Donec lacinia lectus diam.</p>
+						<p>We want to ensure that no one feels insecure about their credit score by giving simple solutions with quick results.</p>
 					</div>
 
 				</div>
@@ -265,4 +290,15 @@
 	
 </body>
 
+<script>
+	function toggleMenu(){
+		if(document.getElementById("hamburger-menu").style.display == "none"){
+			document.getElementById("hamburger-menu").style.display = "flex"
+		}
+		else{
+			document.getElementById("hamburger-menu").style.display = "none"
+		}
+	}
+</script>
+	
 </html>
