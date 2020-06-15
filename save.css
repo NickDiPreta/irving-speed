@@ -2,35 +2,35 @@
 
 @font-face {
 	font-family: 'TT Norms Pro';
-	src: url("TT Norms Pro Family/TT Norms Pro Normal.otf") format('otf');
+	src: url("/TT Norms Pro Family/TT Norms Pro Normal.otf") format('otf');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'TT Norms Pro';
-	src: url("TT Norms Pro Family/TT Norms Pro Regular.otf") format('otf');
+	src: url("/TT Norms Pro Family/TT Norms Pro Regular.otf") format('otf');
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'TT Norms Pro';
-	src: url("TT Norms Pro Family/TT Norms Pro DemiBold.otf") format('otf');
+	src: url("/TT Norms Pro Family/TT Norms Pro DemiBold.otf") format('otf');
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'TT Norms Pro';
-	src: url("TT Norms Pro Family/TT Norms Pro Light.otf") format('otf');
+	src: url("/TT Norms Pro Family/TT Norms Pro Light.otf") format('otf');
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'TT Norms Pro';
-	src: url("TT Norms Pro Family/TT Norms Pro Bold.otf") format('otf');
+	src: url("/TT Norms Pro Family/TT Norms Pro Bold.otf") format('otf');
 	font-weight: 700;
 	font-style: normal;
 }
