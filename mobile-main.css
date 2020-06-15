@@ -3,7 +3,9 @@
 
 	body{
         margin: 0px;
-        width: 100%;
+		width: 100%;
+		max-width: 415px;
+    	overflow-x: hidden;
         font-size:12px;
     }
 
@@ -28,7 +30,7 @@
     }
 
     a{
-        margin-right: none;
+        margin-right: 0;
     }
 
     #hamburger-image{
@@ -43,7 +45,9 @@
     }
 
     #container{
-        margin-top: 16%;
+		margin-top: 16%;
+		width:100%;
+		overflow:hidden;
     }
 
     .navbutton{
@@ -61,7 +65,7 @@
     }
 
     .navbutton{
-        margin-right: 0;
+		margin-right: 0;
         margin-top: 0;
         margin-bottom: 0;
     }
@@ -93,7 +97,7 @@
 		background-position: 50% 1%;
 		background-repeat: no-repeat;
 		background-size: 0%;
-		margin-bottom:0em;
+		margin:0em;
 	}
 
 	.landingtext{
@@ -103,6 +107,7 @@
 		width:90%;
 		z-index:1;
 	}
+
 
 	#landingtitle{
 		font-family: TT Norms Pro;
@@ -129,29 +134,29 @@
 	}
 
 	#landingmockup{
-	width:95%;
+	width:90%;
 	float:left;
     z-index:1;
     padding-right: 0;
 	margin-top:35em;
-	margin-left:2em;
+	margin-left:1.5em;
 	}
 
 	#features{
 		width:95%;
-		margin-bottom:-5%;
+		margin:0 auto -5% auto;
 		display:flex;
 		flex-wrap:wrap;
-		justify-content: space-around;
+		justify-content: space-between;
 		position:relative;
 		z-index: 5;
 	}
 
 	.column{
-		width:100%;
+		width:95%;
 		box-shadow:0 .2em 2em .2em rgba(0, 0, 0, 0.1);
 		border-radius: 1.25em;
-		margin:2em 1em;
+		margin:2em 0em;
 		background-color:white;
 	}
 
