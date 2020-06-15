@@ -487,14 +487,15 @@ img {
     }
 
     #hamburger-image{
-        width: 20%;
-        height: 20%;
-        margin-right: 0;
-        margin-left: 3em;
+        width: 3em;
+        height: auto;
+		margin-left: 0em;
     }
 
     #hamburger-icon{
         display: inline-block;
+		position:absolute;
+		left:75%;
     }
 
     #container{
