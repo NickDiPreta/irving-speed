@@ -153,15 +153,64 @@ img {
 
 }
 
-.fuck{
-    text-decoration:none;
-    font-family: 'TT Norms Pro';
+.blog{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	width:90%;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.card{
+	width:31%;
+	margin:1em 1em;
+	box-shadow:0 .2em 2em .2em rgba(0, 0, 0, 0.1);
+    border-radius: 1.75em;
+}
+
+.picture{
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.title{
+	width:90%;
+	margin-left:5%;
+	margin-top: 1em;
+	font-family: 'TT Norms Pro';
+    font-size:1.5em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.subtitle{
+	width:90%;
+	margin-left:5%;
+	margin-top: 1em;
+	font-family: 'TT Norms Pro';
 	font-size:1em;
-	font-style: normal;
+	line-height:1em;
+    font-style: normal;
     font-weight: normal;
-    width:90%;
-    margin-right:auto;
-    margin-left:auto;
+}
+
+.button{
+	width:40%;
+	height:1.75em;
+	margin-bottom:1em;
+	margin-left:5%;
+	padding-bottom:-.5em;
+	color:white;
+	background-color: #907CFF;
+	text-align:center;
+	font-family: 'TT Norms Pro';
+	font-size:1.5em;
+    font-style: normal;
+	font-weight: normal;
+    border-radius: .5em;
 }
 
 #footer{
