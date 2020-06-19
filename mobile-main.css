@@ -147,6 +147,28 @@
 	margin-left:1.5em;
 	}
 
+
+	#mce-EMAIL{
+		width:30%;
+		height:2.75em;
+	}
+
+	#cta{
+		width:90%;
+		margin:4em auto 2em auto;
+	}
+
+	#ctatitle{
+		width:80%;
+		font-size: 2em;
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+	#mc_embed_signup input.button{
+		height:3em;
+	}
+
 	#features{
 		width:95%;
 		margin:0 auto -5% auto;
@@ -176,11 +198,15 @@
 
 	.featuretitle{
 		font-family: 'TT Norms Pro';
-		font-size:5em;
+		font-size:3em;
 		font-style: normal;
 		font-weight: 600;
 		line-height: 1em;
 		text-align:center;
+		width:80%;
+		margin-right:auto;
+		margin-left:auto;
+		margin-bottom:1.5em;
 	}
 
 	.featuretext{

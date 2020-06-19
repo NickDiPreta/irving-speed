@@ -96,6 +96,63 @@ img {
 	
 }
 
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+  }
+  .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+
+  #popuptitle{
+	font-family: 'TT Norms Pro';
+	font-size: 2em;
+	font-style: normal;
+	font-weight: 600;
+	text-align:center;
+  }
+  
+  .popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 40%;
+	position: relative;
+	transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+  }
+  .popup .close:hover {
+	color: #06D85F;
+  }
+  .popup .content {
+	max-height: 30%;
+	overflow: auto;
+  }
+
 .navbutton{
 	width:auto;
 	font-family: 'TT Norms Pro';
@@ -221,6 +278,7 @@ img {
 	width:90%;
 	margin-right: auto;
 	margin-left:auto;
+	margin-bottom:-7em;
 	display:flex;
 	flex-direction:column;
 }
@@ -267,6 +325,23 @@ img {
 	float:left;
 }
 
+.circle{
+	height:1.98em;
+	width:2em;
+	padding-top:0.02em;
+	border-radius:100em;
+	background-color:#907CFF;
+	margin-top:1em;
+	color:white;
+	text-align:center;
+	font-family: TT Norms Pro;
+	font-size:2em;
+	font-style: normal;
+	font-weight: 600;
+	line-height:.25em;
+}
+
+
 #righttext{
 	width:45%;
 	margin-left:5%;
@@ -290,6 +365,67 @@ img {
 	font-weight: 300;
 	margin:-1em auto 2em auto;
 	line-height:1.5em;
+}
+
+#mc_embed_signup{
+	background-color:none;
+	height:5em;
+	width:100%;
+}
+
+
+#mce-EMAIL{
+	font-family: TT Norms Pro;
+	font-size:1.25em;
+	font-style: normal;
+	font-weight: normal;
+	height:2.25em;
+	padding-right:2em;
+	float:left;
+	border-radius:.85em;
+	border:.085em solid #b5b5b5;
+	padding-left:.75em;
+	width:50%;
+}
+
+div.mc-field-group{
+	float:left;
+}
+
+#mc_embed_signup input.button{
+	font-family: TT Norms Pro;
+	font-size:1.25em;
+	font-style: normal;
+	font-weight: normal;
+	color:white;
+	background-color:#907CFF;
+	border:.085em solid #907CFF;
+	border-radius:.85em;
+	height:2.5em;
+	width:35%;
+	margin-left:5%;
+	width:8.5em;
+}
+
+#cta{
+	width:60%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:15em;
+}
+
+#ctatitle{
+	width:100%;
+	font-family: 'TT Norms Pro';
+	font-size:4em;
+	font-style: normal;
+	font-weight: 600;
+	text-align:center;
+}
+
+#email{
+	width:auto;
+	padding-left:7.5%;
 }
 
 #footer{

@@ -102,6 +102,63 @@ img {
 	
 }
 
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+  }
+  .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+
+  #popuptitle{
+	font-family: 'TT Norms Pro';
+	font-size: 2em;
+	font-style: normal;
+	font-weight: 600;
+	text-align:center;
+  }
+  
+  .popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 40%;
+	position: relative;
+	transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+  }
+  .popup .close:hover {
+	color: #06D85F;
+  }
+  .popup .content {
+	max-height: 30%;
+	overflow: auto;
+  }
+
 .navbutton{
 	width:auto;
 	font-family: 'TT Norms Pro';
@@ -213,6 +270,46 @@ img {
 	width:90%;
 }
 
+#mc_embed_signup{
+	background-color:none;
+	height:5em;
+	width:100%;
+}
+
+
+#mce-EMAIL{
+	font-family: TT Norms Pro;
+	font-size:1.25em;
+	font-style: normal;
+	font-weight: normal;
+	height:2.25em;
+	padding-right:2em;
+	float:left;
+	border-radius:.85em;
+	border:.085em solid #b5b5b5;
+	padding-left:.75em;
+	width:50%;
+}
+
+div.mc-field-group{
+	float:left;
+}
+
+#mc_embed_signup input.button{
+	font-family: TT Norms Pro;
+	font-size:1.25em;
+	font-style: normal;
+	font-weight: normal;
+	color:white;
+	background-color:#907CFF;
+	border:.085em solid #907CFF;
+	border-radius:.85em;
+	height:2.5em;
+	width:35%;
+	margin-left:5%;
+	width:8.5em;
+}
+
 #applestorepic{
 	width:26.75%;
 	height:auto;
@@ -231,9 +328,18 @@ img {
 
 #landingmockup{
 	width:40%;
-	padding-right:3em;
+	padding-right:5em;
 	float:right;
 	z-index:1;
+	padding-top:4em;
+	/* background-image:url('indexpics/landingmockup.svg');
+	background-size:120%;
+	background-position:45% 0%;
+	background-repeat:no-repeat;
+	height: 0;
+	padding: 0;
+	padding-bottom: 45em;
+	position:relative;  */
 }
 
 #features{
@@ -332,6 +438,7 @@ img {
 	position:absolute;
 	right:8%;
 	top:25%;
+	margin-bottom:1.25em;
 }
 
 .rightbannertext{
@@ -343,7 +450,10 @@ img {
 	position:absolute;
 	right:8%;
 	float:right;
-	margin-top:-26.5%;
+}
+
+.rightbannertext p{
+	margin-top:1.5em;
 }
 
 #leftbannertitle{
@@ -367,7 +477,31 @@ img {
 	position:absolute;
 	left:8%;
 	float:left;
-	margin-top:-20%;
+}
+
+#leftbannertext p{
+	margin-top:0em;
+}
+
+#cta{
+	width:60%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:15em;
+}
+
+#ctatitle{
+	width:100%;
+	font-family: 'TT Norms Pro';
+	font-size:4em;
+	font-style: normal;
+	font-weight: 600;
+	text-align:center;
+}
+
+#email{
+	width:auto;
+	padding-left:7.5%;
 }
 
 #footer{
