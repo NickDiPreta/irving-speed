@@ -1,35 +1,35 @@
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url("../hatchcredit.github.io/TTNormsProFamily/TTNormsProNormal.otf");
+    src: url("./TTNormsProFamily/TTNormsProNormal.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url("../hatchcredit.github.io/TTNormsProFamily/TTNormsProRegular.otf");
+    src: url("./TTNormsProFamily/TTNormsProRegular.otf");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url("../hatchcredit.github.io/TTNormsProFamily/TTNormsProDemiBold.otf");
+    src: url("./TTNormsProFamily/TTNormsProDemiBold.otf");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url("../hatchcredit.github.io/TTNormsProFamily/TTNormsProLight.otf");
+    src: url("./TTNormsProFamily/TTNormsProLight.otf");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url("../hatchcredit.github.io/TTNormsProFamily/TTNormsProBold.otf");
+    src: url("./TTNormsProFamily/TTNormsProBold.otf");
     font-weight: 700;
     font-style: normal;
 }
