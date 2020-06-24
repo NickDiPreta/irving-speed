@@ -1,0 +1,309 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 415px) {
+
+	body{
+        margin: 0px;
+		width: 100%;
+		max-width: 415px;
+    	overflow-x: hidden;
+        font-size:12px;
+    }
+
+    #mobile-logo{
+		display: inline-block;
+		position:absolute;
+		left:10%;
+    }
+
+    #mobile-logobutton{
+        width: 30%;
+        height: auto;
+    }
+    
+    #hamburger-menu{
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
+        top: 10%;
+    }
+
+    a{
+        margin-right: 0;
+    }
+
+    #hamburger-image{
+        width: 3em;
+        height: auto;
+		margin-left: 0em;
+    }
+
+    #hamburger-icon{
+		display: inline-block;
+		position:absolute;
+		left:75%;
+    }
+
+    #container{
+		margin-top: 16%;
+		width:100%;
+		overflow:hidden;
+    }
+
+    .navbutton{
+        background-color: white;
+        height: 2em;
+        width: 100%;
+        border-top: thin solid #f0f0f0;
+        border-bottom: thin solid #f0f0f0;
+        margin: auto;
+        line-height: 1em;
+        display: table-column;
+        padding-bottom:1em;
+        font-family: TT Norms Pro;
+        font-size:2em;
+    }
+
+    .navbutton{
+		margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #mobile-header{
+        position: fixed;
+        width: 100%;
+        height: 6.5em;
+        left: 0;
+        top: 0;
+        padding-left: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        /* border-bottom: 0.5px solid grey; */
+        background-color: white;
+		z-index: 10;
+		overflow:hidden;
+		vertical-align: middle;
+    }
+
+    #header{
+        display: none;
+    }
+
+	#landing{
+		height:70em;
+		width:100%;
+		background-image:url("assets/landingbackground.svg");
+		background-position: 50% 1%;
+		background-repeat: no-repeat;
+		background-size: 0%;
+		margin:0em;
+	}
+
+	.landingtext{
+		position:absolute;
+		margin-top:2em;
+		left:3em;
+		width:90%;
+		z-index:1;
+	}
+
+
+	#landingtitle{
+		font-family: TT Norms Pro;
+		font-size:2.5em;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.25em;
+		float:left;
+		width:90%;
+	}
+
+	#landingtitle p{
+		margin-bottom:1rem;
+	}
+
+	#landingsubtitle{
+		font-family: TT Norms Pro;
+		font-size:1.5em;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1.5em;
+		float:left;
+		width:90%;
+	}
+
+	#landingmockup{
+	width:90%;
+	float:left;
+    z-index:1;
+    padding-right: 0;
+	margin-top:35em;
+	margin-left:1.5em;
+	}
+
+
+	#mce-EMAIL{
+		width:30%;
+		height:2.75em;
+	}
+
+	#cta{
+		width:90%;
+		margin:4em auto 2em auto;
+	}
+
+	#ctatitle{
+		width:80%;
+		font-size: 2em;
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+	#mc_embed_signup input.button{
+		height:3em;
+	}
+
+	#features{
+		width:95%;
+		margin:0 auto -5% auto;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content: space-between;
+		position:relative;
+		z-index: 5;
+	}
+
+	.column{
+		width:100%;
+		box-shadow:0 .2em 2em .2em rgba(0, 0, 0, 0.1);
+		border-radius: 1.25em;
+		margin:2em 0em 0em 0em;
+		background-color:white;
+	}
+
+	.featurepic{
+		width:80%;
+		height:auto;
+		margin-right:auto;
+		margin-left:auto;
+		margin-top: 1em;
+		margin-bottom:-1em;
+	}
+
+	.featuretitle{
+		font-family: 'TT Norms Pro';
+		font-size:3em;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1em;
+		text-align:center;
+		width:80%;
+		margin-right:auto;
+		margin-left:auto;
+		margin-bottom:1.5em;
+	}
+
+	.featuretext{
+		font-family: 'TT Norms Pro';
+		font-size:2em;
+		font-style: normal;
+		font-weight: 300;
+		width:80%;
+		margin:-1.5em auto 2em auto;
+	}
+
+	#applestorepic{
+		width:41%;
+		height:auto;
+		float:left;
+		margin:auto 1em auto 0em auto;
+	}
+
+	#googleplaypic{
+		width:46%;
+		height:auto;
+		float:left;
+		margin:0em auto .5em auto;
+	}
+
+
+    #banners{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        z-index: 1;
+	}
+
+	.bannerpic{
+		width:100%;
+		height:auto;
+		margin-bottom:-8.5%;
+	}
+
+	#buildbanner{
+		width:100%;
+		height:30%;
+		position:relative;
+		z-index:4;
+	}
+
+	#savebanner{
+		width:100%;
+		height:30%;
+		position:relative;
+		z-index:3;
+	}
+
+	#learnbanner{
+		width:100%;
+		height:30%;
+		position:relative;
+		z-index:2;
+	}
+
+	.rightbannertitle{
+		display:none;
+	}
+
+	.rightbannertext{
+		font-family: 'TT Norms Pro';
+		font-size:1.5em;
+		font-style: normal;
+		font-weight: normal;
+		line-height:1.1em;
+		width:40%;
+		position:absolute;
+		right:4%;
+		float:right;
+		margin-top:-7.65em;
+	}
+
+	#leftbannertitle{
+		display:none;
+	}
+
+	#leftbannertext{
+		font-family: 'TT Norms Pro';
+		font-size:1.5em;
+		font-style: normal;
+		font-weight: normal;
+		line-height:1.1em;
+		width:40%;
+		position:absolute;
+		left:5%;
+		float:left;
+		margin-top:-5.95em;
+	}
+
+
+	#footer{
+		display:none;
+	} 
+}

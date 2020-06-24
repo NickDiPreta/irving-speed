@@ -1,0 +1,357 @@
+
+/*landing*/
+
+#landing{
+	height:50em;
+	width:100%;
+	background-image:url("assets/landingbackground.svg");
+	background-position: 50% 1%;
+	background-repeat: no-repeat;
+	background-size: 89%;
+	margin-bottom:-15em;
+}
+
+/*landing text*/
+
+.landingtext{
+	position:absolute;
+	margin-top:3em;
+	left:7.5em;
+	width:45%;
+	z-index:1;
+}
+
+#landingtitle{
+	font-family: TT Norms Pro;
+	font-size:2.5em;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.5em;
+	float:left;
+	width:90%;
+}
+
+#landingtitle p{
+	margin-bottom:1rem;
+}
+
+#landingsubtitle{
+	font-family: TT Norms Pro;
+	font-size:1.5em;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 2em;
+	float:none;
+	width:90%;
+}
+
+/*landing image*/
+
+#landingmockup{
+	width:40%;
+	padding-right:5em;
+	float:right;
+	z-index:1;
+	padding-top:4em;
+	/* background-image:url('indexpics/landingmockup.svg');
+	background-size:120%;
+	background-position:45% 0%;
+	background-repeat:no-repeat;
+	height: 0;
+	padding: 0;
+	padding-bottom: 45em;
+	position:relative;  */
+}
+
+#features{
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:-5%;
+	display:flex;
+	justify-content: space-around;
+	position:relative;
+	z-index: 5;
+}
+
+.column{
+	width:30%;
+	box-shadow:0 .2em 2em .2em rgba(0, 0, 0, 0.1);
+	border-radius: 1.25em;
+	margin:2em 1em;
+	background-color:white;
+}
+
+.featurepic{
+	width:60%;
+	height:auto;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 2em;
+	margin-bottom:-1em;
+}
+
+.featuretitle{
+	font-family: 'TT Norms Pro';
+	font-size:2em;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.5em;
+	text-align:center;
+}
+
+.featuretext{
+	font-family: 'TT Norms Pro';
+	font-size:1.1em;
+	font-style: normal;
+	font-weight: 300;
+	width:80%;
+	margin:-1.5em auto 2em auto;
+}
+
+#banners{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+	z-index: 1;
+
+}
+
+.bannerpic{
+	width:100%;
+	height:auto;
+	margin-bottom:-8.5%;
+}
+
+/*.learnbannerpic{
+	margin-top:-5%;
+}*/
+
+#buildbanner{
+	width:100%;
+	height:30%;
+	position:relative;
+	z-index:4;
+}
+
+#savebanner{
+	width:100%;
+	height:30%;
+	position:relative;
+	z-index:3;
+}
+
+#learnbanner{
+	width:100%;
+	height:30%;
+	position:relative;
+	z-index:2;
+}
+
+.rightbannertitle{
+	font-family: 'TT Norms Pro';
+	font-size:2.75em;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1em;
+	width:35%;
+	position:absolute;
+	right:8%;
+	top:25%;
+	margin-bottom:1.25em;
+}
+
+.rightbannertext{
+	font-family: 'TT Norms Pro';
+	font-size:1.75em;
+	font-style: normal;
+	font-weight: 300;
+	width:35%;
+	position:absolute;
+	right:8%;
+	float:right;
+}
+
+.rightbannertext p{
+	margin-top:1.5em;
+}
+
+#leftbannertitle{
+	font-family: 'TT Norms Pro';
+	font-size:2.75em;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1em;
+	width:35%;
+	position:absolute;
+	left:8%;
+	top:40%;
+}
+
+#leftbannertext{
+	font-family: 'TT Norms Pro';
+	font-size:1.75em;
+	font-style: normal;
+	font-weight: 300;
+	width:35%;
+	position:absolute;
+	left:8%;
+	float:left;
+}
+
+#leftbannertext p{
+	margin-top:0em;
+}
+
+@media only screen and (min-width: 416px) {
+	body{font-size:7px;}
+
+	#landingtitle{
+		line-height:1.25em;
+	}
+
+	#landingtitle p{
+	margin-bottom:.75rem;
+	}
+
+	#landingsubtitle{
+		line-height:1.25em;
+		font-size:1.25em;
+	}
+
+	.landingtext{
+		margin-top:1em;
+	}
+
+	.rightbannertext{
+		line-height: 1.25em;
+		margin-top:-25%;
+	}
+
+	#leftbannertext{
+		line-height: 1.25em;
+		margin-top:-18%;
+	}
+
+	.footersection{
+		font-size:1em;
+	}
+}
+
+@media only screen and (min-width: 485px) {
+	body{font-size:8px;}
+
+	#landingtitle{
+		line-height:1.25em;
+	}
+
+	#landingtitle p{
+	margin-bottom:.75rem;
+	}
+
+	#landingsubtitle{
+		line-height:1.25em;
+		font-size:1.25em;
+	}
+
+	.landingtext{
+		margin-top:1em;
+	}
+
+	.footersection{
+		font-size:1em;
+	}
+}
+
+@media only screen and (min-width: 554px) {
+	body{font-size:8px;}
+
+	#landingsubtitle{
+		line-height:1.75em;
+	}
+
+	.landingtext{
+		margin-top:2.5em;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 623px) {
+	body{font-size:9px;}
+
+	#landingsubtitle{
+		line-height:1.75em;
+	}
+
+	.landingtext{
+		margin-top:2em;
+	}
+}
+
+@media only screen and (min-width: 692px) {
+	body{font-size:10px;}
+
+	#landingsubtitle{
+		line-height:1.75em;
+	}
+
+	.landingtext{
+		margin-top:3em;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 829px) {
+	body {font-size:12px;}
+
+	#landingsubtitle{
+		line-height:1.5em;
+	}
+}
+
+@media only screen and (min-width: 899px) {
+	body {font-size:13px;}
+
+	#landingsubtitle{
+		line-height:1.5em;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	body {font-size:14px;}	
+
+	#landingsubtitle{
+		line-height:1.5em;
+	}
+}
+
+@media only screen and (min-width: 1040px) {
+	body {font-size:15px;}
+
+	#landingsubtitle{
+		line-height:1.7em;
+	}
+}
+
+@media only screen and (min-width: 1107px) {
+	body {font-size:16px;}
+
+	#landingtitle{
+	font-size:3em;
+	}
+
+	#landingsubtitle{
+		line-height:1.7em;
+		font-size:1.5em;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
