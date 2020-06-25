@@ -1,34 +1,34 @@
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url("./assets/TTNormsProFamily/TTNormsProNormal.otf");
+    src: url("../assets/TTNormsProFamily/TTNormsProNormal.otf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url("./assets/TTNormsProFamily/TTNormsProRegular.otf");
+    src: url("../assets/TTNormsProFamily/TTNormsProRegular.otf");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url("./assets/TTNormsProFamily/TTNormsProDemiBold.otf");
+    src: url("../assets/TTNormsProFamily/TTNormsProDemiBold.otf");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url("./assets/TTNormsProFamily/TTNormsProLight.otf");
+    src: url("../assets/TTNormsProFamily/TTNormsProLight.otf");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TT Norms Pro';
-    src: url("./assets/TTNormsProFamily/TTNormsProBold.otf");
+    src: url("../assets/TTNormsProFamily/TTNormsProBold.otf");
     font-weight: 700;
     font-style: normal;
 }
