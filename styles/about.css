@@ -233,6 +233,89 @@
     margin:0em auto 1em auto;
 }
 
+#mobile-header{
+    display: none;
+}
+
+.navbutton{
+	width:auto;
+	font-family: 'TT Norms Pro';
+	font-size:1em;
+	font-style: normal;
+	font-weight: normal;
+	position:relative;
+	overflow: hidden;
+	margin-right:3em;
+	width:auto;
+	height:auto;
+	text-align:center;
+	top:1em;
+	float:right;
+	text-decoration:none;
+	color:black;
+}
+
+#mc_embed_signup{
+	background-color:none;
+	height:5em;
+	width:100%;
+}
+
+
+#mce-EMAIL{
+	font-family: TT Norms Pro;
+	font-size:1.25em;
+	font-style: normal;
+	font-weight: normal;
+	height:2.25em;
+	padding-right:2em;
+	float:left;
+	border-radius:.85em;
+	border:.085em solid #b5b5b5;
+	padding-left:.75em;
+	width:50%;
+}
+
+div.mc-field-group{
+	float:left;
+}
+
+#mc_embed_signup input.button{
+	font-family: TT Norms Pro;
+	font-size:1.25em;
+	font-style: normal;
+	font-weight: normal;
+	color:white;
+	background-color:#907CFF;
+	border:.085em solid #907CFF;
+	border-radius:.85em;
+	height:2.5em;
+	width:35%;
+	margin-left:5%;
+	width:8.5em;
+}
+
+#cta{
+	width:60%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:15em;
+}
+
+#ctatitle{
+	width:100%;
+	font-family: 'TT Norms Pro';
+	font-size:4em;
+	font-style: normal;
+	font-weight: 600;
+	text-align:center;
+}
+
+#email{
+	width:auto;
+	padding-left:7.5%;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 414px) {
     body{font-size:12px;}
@@ -267,7 +350,7 @@
     }
 
     a{
-        margin-right: none;
+        margin-right: 0;
     }
 
     #hamburger-image{
@@ -284,6 +367,8 @@
 
     #container{
         margin-top: 16%;
+        width:100%;
+		overflow:hidden;
     }
 
     .navbutton{
@@ -552,7 +637,26 @@
         margin:0em auto 1em auto;
     }
     
+    #cta{
+		width:100%;
+		margin:4em auto 2em auto;
+	}
+
+	#ctatitle{
+		width:80%;
+		font-size: 2em;
+		margin-right:auto;
+		margin-left:auto;
+	}
+
+	#mc_embed_signup input.button{
+		height:3em;
+    }
     
+    #mce-EMAIL{
+		height:2.75em;
+		width:30%;
+	}
     
     #footer{
         display:none;

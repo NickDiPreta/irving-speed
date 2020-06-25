@@ -64,7 +64,8 @@
         display: table-column;
         padding-bottom:1em;
         font-family: TT Norms Pro;
-        font-size:2em;
+		font-size:2em;
+		text-align:center;
     }
 
     .navbutton{
@@ -102,7 +103,7 @@
 		background-position: 50% 1%;
 		background-repeat: no-repeat;
 		background-size: 0%;
-		margin:0em;
+		margin:0em 0em -6em 0em;
 	}
 
 	.landingtext{
@@ -143,7 +144,7 @@
 	float:left;
     z-index:1;
     padding-right: 0;
-	margin-top:35em;
+	margin-top:30em;
 	margin-left:1.5em;
 	}
 

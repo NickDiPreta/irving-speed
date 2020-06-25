@@ -204,6 +204,71 @@
 	margin-top:0em;
 }
 
+#mobile-header{
+	display:none;
+}
+
+#mc_embed_signup{
+	background-color:none;
+	height:5em;
+	width:100%;
+}
+
+
+#mce-EMAIL{
+	font-family: TT Norms Pro;
+	font-size:1.25em;
+	font-style: normal;
+	font-weight: normal;
+	height:2.25em;
+	padding-right:2em;
+	float:left;
+	border-radius:.85em;
+	border:.085em solid #b5b5b5;
+	padding-left:.75em;
+	width:50%;
+}
+
+div.mc-field-group{
+	float:left;
+}
+
+#mc_embed_signup input.button{
+	font-family: TT Norms Pro;
+	font-size:1.25em;
+	font-style: normal;
+	font-weight: normal;
+	color:white;
+	background-color:#907CFF;
+	border:.085em solid #907CFF;
+	border-radius:.85em;
+	height:2.5em;
+	width:35%;
+	margin-left:5%;
+	width:8.5em;
+}
+
+#cta{
+	width:60%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:15em;
+}
+
+#ctatitle{
+	width:100%;
+	font-family: 'TT Norms Pro';
+	font-size:4em;
+	font-style: normal;
+	font-weight: 600;
+	text-align:center;
+}
+
+#email{
+	width:auto;
+	padding-left:7.5%;
+}
+
 @media only screen and (min-width: 416px) {
 	body{font-size:7px;}
 

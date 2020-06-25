@@ -10,6 +10,28 @@
 
 }
 
+#mobile-header{
+    display: none;
+}
+
+.navbutton{
+	width:auto;
+	font-family: 'TT Norms Pro';
+	font-size:1em;
+	font-style: normal;
+	font-weight: normal;
+	position:relative;
+	overflow: hidden;
+	margin-right:3em;
+	width:auto;
+	height:auto;
+	text-align:center;
+	top:1em;
+	float:right;
+	text-decoration:none;
+	color:black;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 414px) {
     body{font-size:12px;}
@@ -75,6 +97,7 @@
         padding-bottom:1em;
         font-family: TT Norms Pro;
         font-size:2em;
+        text-align:center;
     }
 
     .navbutton{
