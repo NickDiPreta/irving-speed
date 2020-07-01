@@ -146,7 +146,7 @@ img {
 	overflow: auto;
   }
 
-  .navbutton{
+  /* .navbutton{
 	width:auto;
 	font-family: 'TT Norms Pro';
 	font-size:1em;
@@ -162,7 +162,7 @@ img {
 	float:right;
 	text-decoration:none;
 	color:black;
-}
+} */
 
 .navbutton a{
 	text-decoration:none;

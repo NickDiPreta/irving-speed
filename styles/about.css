@@ -15,15 +15,15 @@
 
 .landingtext{
 	position:absolute;
-	margin-top:3em;
-	left:7.5em;
-	width:45%;
+	margin-top:0em;
+	left:15%;
+	width:35%;
 	z-index:1;
 }
 
 #landingtitle{
 	font-family: TT Norms Pro;
-	font-size:2.5em;
+	font-size:2.75em;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 1.5em;
@@ -37,7 +37,7 @@
 
 #landingsubtitle{
 	font-family: TT Norms Pro;
-	font-size:1.5em;
+	font-size:1.25em;
 	font-style: normal;
 	font-weight: normal;
 	line-height: 2em;
@@ -46,17 +46,17 @@
 }
 
 #aboutlanding{
-    width:35%;
-    padding-right:8em;
+    width:30%;
+    padding-right:10%;
     padding-top:3em;
     float:right;
     z-index:1;
     position:absolute;
-    right:.5em;
+    right:5%;
 }
 
 #why{
-    width:90%;
+    width:77%;
     height:25em;
     margin-left:auto;
     margin-right:auto;
@@ -93,14 +93,16 @@
 #whysubtitle{
     width:90%;
     font-family: 'TT Norms Pro';
-    font-size:1.25em;
+    font-size:1.15em;
     font-style: normal;
     font-weight: 300;
     line-height:1.5em;
 }
 
 #bigpicture{
-    width:100%;
+    width:86%;
+    margin-right:auto;
+    margin-left:auto;
     height:50em;
     padding-top:3.5em;
     background-image:url("assets/bigpicbackground.svg");
@@ -115,7 +117,7 @@
 
 .bigpictext{
     width:45%;
-    margin-left:3%;
+    margin-left:8%;
     float:left;
 
 }
@@ -138,7 +140,7 @@
 }
 
 #bigpic{
-    width:48%;
+    width:40%;
     margin-top:2em;
     margin-bottom:2.5em;
     height:auto;
@@ -147,7 +149,7 @@
 
 #facts{
     display:flex;
-    width:90%;
+    width:87%;
     margin:0em auto;
     justify-content: space-around;
 }
@@ -181,13 +183,13 @@
 
 
 #team{
-    width:90%;
-    margin:6em auto 0em auto;
+    width:77%;
+    margin:1em auto 0em auto;
 }
 
 #teamtitle{
     font-family: 'TT Norms Pro';
-    font-size:2.75em;
+    font-size:2.25em;
     font-style: normal;
     font-weight: 600;
     line-height: 1em;
@@ -258,22 +260,22 @@
 #mc_embed_signup{
 	background-color:none;
 	height:5em;
-	width:100%;
+	width:70%;
 }
 
 
 #mce-EMAIL{
 	font-family: TT Norms Pro;
-	font-size:1.25em;
+	font-size:1em;
 	font-style: normal;
 	font-weight: normal;
-	height:2.25em;
+	height:2.50em;
 	padding-right:2em;
 	float:left;
 	border-radius:.85em;
 	border:.085em solid #b5b5b5;
 	padding-left:.75em;
-	width:50%;
+	width:40%;
 }
 
 div.mc-field-group{
@@ -282,30 +284,30 @@ div.mc-field-group{
 
 #mc_embed_signup input.button{
 	font-family: TT Norms Pro;
-	font-size:1.25em;
+	font-size:1em;
 	font-style: normal;
 	font-weight: normal;
 	color:white;
 	background-color:#907CFF;
 	border:.085em solid #907CFF;
 	border-radius:.85em;
-	height:2.5em;
-	width:35%;
+	height:2.75em;
+	width:25%;
 	margin-left:5%;
-	width:8.5em;
+	width:30%;
 }
 
 #cta{
 	width:60%;
 	margin-right:auto;
 	margin-left:auto;
-	margin-top:15em;
+	margin-top:12em;
 }
 
 #ctatitle{
 	width:100%;
 	font-family: 'TT Norms Pro';
-	font-size:4em;
+	font-size:3em;
 	font-style: normal;
 	font-weight: 600;
 	text-align:center;
@@ -313,7 +315,7 @@ div.mc-field-group{
 
 #email{
 	width:auto;
-	padding-left:7.5%;
+	padding-left:28%;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -383,6 +385,7 @@ div.mc-field-group{
         padding-bottom:1em;
         font-family: TT Norms Pro;
         font-size:2em;
+        text-align:center;
     }
 
     .navbutton{
@@ -514,7 +517,7 @@ div.mc-field-group{
     
     .bigpictext{
         width:100%;
-        margin-left:5%;
+        margin-left:0%;
         float:left;
     
     }
@@ -541,7 +544,7 @@ div.mc-field-group{
         width:100%;
         margin-top:2em;
         margin-bottom:2.5em;
-        padding-left:1em;
+        padding-left:0em;
         height:auto;
         float:left;
     }
@@ -553,7 +556,6 @@ div.mc-field-group{
         justify-content: space-around;
         flex-wrap:wrap;
         margin-top:50em;
-        padding-left:2.5em;
     }
     
     .card{
@@ -566,11 +568,11 @@ div.mc-field-group{
     
     .cardtitle{
         font-family: 'TT Norms Pro';
-        font-size:2em;
+        font-size:1.85em;
         font-style: normal;
         font-weight: 600;
         line-height: 1em;
-        margin:0em auto 1.25em;
+        margin:0em auto 1.35em;
         width:80%;
     }
     
@@ -636,9 +638,14 @@ div.mc-field-group{
         line-height: 1em;
         margin:0em auto 1em auto;
     }
+
+    #email{
+		width:100%;
+		padding-left:6%;
+	}
     
     #cta{
-		width:100%;
+		width:90%;
 		margin:4em auto 2em auto;
 	}
 
@@ -647,15 +654,20 @@ div.mc-field-group{
 		font-size: 2em;
 		margin-right:auto;
 		margin-left:auto;
+    }
+    
+    #mc_embed_signup{
+		width:90%;
 	}
 
 	#mc_embed_signup input.button{
-		height:3em;
+        height:3em;
+        width:35%;
     }
     
     #mce-EMAIL{
 		height:2.75em;
-		width:30%;
+		width:45%;
 	}
     
     #footer{
@@ -798,12 +810,26 @@ div.mc-field-group{
     body {font-size:16px;}
 
     #landingtitle{
-    font-size:3em;
+    font-size:2.75em;
     }
 
     #landingsubtitle{
         line-height:1.7em;
-        font-size:1.5em;
+        font-size:1.25em;
+    }
+
+    .cardtitle{
+        font-size:1.75em;
+        margin:0em auto 1.35em;
+    }
+    
+    .cardtext{
+        font-size:1.25em;
+        margin:-1.25em auto 2em auto;
+    }
+
+    #whytitle{
+        font-size:2.25em;
     }
 }
 
