@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "1516209753.com.Perch.app" ],
+             "appIDs": [ "UY68TPGF78.com.Perch.app" ],
              "components": [
                {
                   "#": "no_universal_links",
@@ -18,6 +18,6 @@
        ]
    },
    "webcredentials": {
-      "apps": [ "1516209753.com.Perch.app" ]
+      "apps": [ "UY68TPGF78.com.Perch.app" ]
    }
 }
