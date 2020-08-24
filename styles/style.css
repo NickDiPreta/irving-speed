@@ -52,11 +52,28 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  #logo{
+    width:15%;
+    height:auto;
+    margin-top:7rem;
+    margin-left:10%;
+  }
+}
+@media only screen and (min-width: 1170px){
+  #logo{
+    width:7%;
+    height:auto;
+    margin-top:6rem;
+    margin-left:10%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   #text{
     width:65%;
     height:auto;
     margin-left:10%;
-    margin-top:25%;
+    margin-top:15%;
     z-index:5;
 }
 
@@ -65,7 +82,7 @@ body {
     width:45%;
     height:auto;
     margin-left:10%;
-    margin-top:13%;
+    margin-top:8%;
     z-index:5;
   }
 }

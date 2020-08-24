@@ -51,12 +51,19 @@
         background-position: center bottom;
         background-repeat: no-repeat;
     }
+
+    #logo{
+        width:20%;
+        height:auto;
+        margin-top:6rem;
+        margin-left:10%;
+      }
     
     #text{
         width:90%;
         height:auto;
         margin-left:10%;
-        margin-top:40%;
+        margin-top:20%;
         z-index:5;
     }
     
