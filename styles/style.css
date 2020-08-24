@@ -444,7 +444,7 @@ images
     width:33%;
     height:auto;
     position:absolute;
-    bottom:13%;
+    bottom:10%;
     right:7%;
     z-index:1;
   }
@@ -474,7 +474,7 @@ images
     width:34%;
     height:auto;
     position:absolute;
-    top:53%;
+    top:58%;
     left:8%;
     z-index:1;
   }
@@ -504,7 +504,7 @@ images
     width:30%;
     height:auto;
     position:absolute;
-    bottom:10%;
+    bottom:7%;
     right:25%;
     z-index:1;
   }
@@ -515,7 +515,7 @@ images
     height:auto;
     position:absolute;
     bottom:10%;
-    right:11%;
+    right:18%;
     z-index:1;
   }
 }
