@@ -7,11 +7,16 @@
      * If you have the user's sessionKey, invoke the following line. Or you
      * can use the login/signup widgets.
      */
+
+    var url = new URL(window.location.href);
+    var sessionKey = url.searchParams.get("sessionKey");
+    
     PRODUCTFY.initialize({
       apiKey: 'Pfy_ApiK-FOAYyCv3SeI1S7i69t62n',
-      sessionKey: 'vKiMyZ_DfWKoJz7bQjMv19WfK1Cm1ehpjOO_XDQypjVXRzxIiO_Pw0M_RXnmbx27wEK8mw',
+      sessionKey: sessionKey,
       tenantDeploymentEnvironmentId: 'Pfy_TnntDeployEnv-2OCkk4VMFPnu'
     });
+
   </script>
 </head>
 <body>
