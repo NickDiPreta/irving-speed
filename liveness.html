@@ -8,9 +8,11 @@
      * can use the login/signup widgets.
      */
 
+
     var url = new URL(window.location.href);
     var sessionKey = url.searchParams.get("sessionKey");
-    
+    console.log(sessionKey)
+
     PRODUCTFY.initialize({
       apiKey: 'Pfy_ApiK-FOAYyCv3SeI1S7i69t62n',
       sessionKey: sessionKey,
