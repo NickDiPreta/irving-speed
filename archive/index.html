@@ -11,16 +11,18 @@
   gtag('config', 'UA-173792365-1');
 </script>
 
-	<title>Perch | Home</title>
+	<title>Perch</title>
 
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<link rel="stylesheet" type="text/css" href="styles/global.css">
-	<link rel="stylesheet" type="text/css" href="styles/mobile-main.css">
+	<link rel="stylesheet" href="styles/reset.css"> <!-- CSS Reset -->
+	<link rel="stylesheet" href="styles/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="styles/mobile-style.css"> <!-- Mobile resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="assets/perchlogo.svg">
-	<meta name="keywords" content="personal, portfolio, design, product">
 	<meta name="description" content="Build credit fast- all it takes is paying your rent. We'll handle the rest.">
 	<meta charset="UTF-8">
+
 	<!-- Begin Inspectlet Asynchronous Code -->
 	<script type="text/javascript">
 	(function() {
@@ -37,205 +39,57 @@
 <style class="undefined">  .cls-1{opacity:0.3;}.cls-1,.cls-2{isolation:isolate;}.cls-3{fill:none;}</style>
 
 <body>
+	<div id="container">
 
-	<!-- web header -->
-	<div id="header">
-		<div id="getapp">
-			<a href="#popup1" id="getappbutton"><p>Get App</p></a>
-		</div>
+		<img id="logo" src="assets/perchlogo.svg">
+		
+		<div id="text">
 
-		<div id="popup1" class="overlay">
-			<div class="popup">
-				<a class="close" href="#">&times;</a>
-				
-				<p id="popuptitle">Get early access.</p>
-				
-				<div id="mc_embed_signup" style="margin-left:19%; font-size:.85em;">
-					<form action="https://credit.us4.list-manage.com/subscribe/post?u=a5cbed8d10629eb73791bf1b9&amp;id=891988c123" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<div id="mc_embed_signup_scroll">
-						<label for="mce-EMAIL"></label>
-						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
-						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a5cbed8d10629eb73791bf1b9_891988c123" tabindex="-1" value=""></div>
-						<div class="clear"><input type="submit" value="Join Waitlist" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-						</div>
-					</form>
-				</div>
+			<div id="title">
+
+				<section class="cd-intro">
+					<h1 class="cd-headline push">
+						<span style="color:#2C2261;">Build credit</span><br>
+						<span class="cd-words-wrapper">
+							<b class="is-visible">with rent payments</b>
+							<b>with subscriptions</b>
+							<b>in thirty seconds</b>
+						</span>
+					</h1>
+				</section>
+
 			</div>
+
+			<div id="subtitle">
+				<p>Perch allows you to use recurring expenses as credit history to instantly boost your credit score.</p>
+			</div>
+
+			
+			<div id="cta">
+				<a href="index.html">
+
+
+					<a class="typeform-share link" href="https://form.typeform.com/to/rkH7jDUt" data-mode="popup" target="_blank">
+						<p style="color:#907cff;">Join the waitlist</p>
+						<img id="arrow" src="assets/arrow.png">
+					</a>
+					<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+
+				</a>
+			</div>
+
 		</div>
 
-		<div class="navbutton">
-			<a target="_blank" href="https://medium.com/@PerchCredit"><p>Blog</p></a>
-		</div>
-
-		<div class="navbutton">
-			<a href="about.html"><p>About</p></a>
-		</div>
-
-		<div class="navbutton">
-			<a href="how.html"><p>How It Works</p></a>
-		</div>
-
-		<a href="index.html" id="logobutton"><img src="assets/perchlogo.svg" id="logo"></a>
-
-	</div>
-
-	<div id="mobile-header">
-		<div id="mobile-logo">
-			<a href="index.html"><img src="assets/perchlogo.svg" id="mobile-logobutton"></a>
-		</div>
-
-		<div id="hamburger-icon" onclick="toggleMenu()">
-			<img src="assets/hamburger.svg" id="hamburger-image">
+		<div id="images">
+			<!-- <img id="sub" src="assets/subscriptions.png"> -->
+			<img id="landing" src="assets/landing-mockup.png">
+			<img id="month" src="assets/months-reported.png">
+			<img id="transactions" src="assets/transactions.png">
 		</div>
 	</div>
-
-	<div id="hamburger-menu">
-		<div class="navbutton">
-			<a target="_blank" href="https://medium.com/@PerchCredit"><p>Blog</p></a>
-		</div>
-
-		<div class="navbutton">
-			<a href="about.html"><p>About</p></a>
-		</div>
-
-		<div class="navbutton">
-			<a href="how.html"><p>How It Works</p></a>
-		</div>
-	</div>
-
-	<div id=container>
-		<div id=landing>
-			<div class="landingtext">
-
-				<div id="landingtitle">
-					<p>Start building your credit in under 30 seconds.</p>
-				</div>
-
-				<div id="landingsubtitle">
-					<p>Perch Credit is a free app that allows you to use your rent payments as credit history to instantly boost your credit score.</p>
-				</div>
-
-				<div id="mc_embed_signup">
-					<form action="https://credit.us4.list-manage.com/subscribe/post?u=a5cbed8d10629eb73791bf1b9&amp;id=891988c123" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<div id="mc_embed_signup_scroll">
-						<label for="mce-EMAIL"></label>
-						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
-						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a5cbed8d10629eb73791bf1b9_891988c123" tabindex="-1" value=""></div>
-						<div class="clear"><input type="submit" value="Join Waitlist" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-						</div>
-					</form>
-				</div>
-
-			</div>
-
-			<div id="landingmockup">
-
-				<img src="assets/landingmockup.svg">
-
-			</div>
-
-		</div>
-
-		<div id="banners">
-			<div id="buildbanner">
-				<img src="assets/build1.svg" class="bannerpic">
-				<div class="rightbannertitle"><p>Build</p></div>
-				<div class="rightbannertext"><p>Record your rent and other recurring payments to start building your credit score.</p></div>
-			</div>
-
-
-			<div id="savebanner">
-				<img src="assets/save1.svg" class="bannerpic">
-				<div id="leftbannertitle"><p>Save</p></div>
-				<div id="leftbannertext"><p>By keeping track of your expenses, we can help you better manage your finances.</p></div>
-			</div>
-
-
-			<div id="learnbanner">
-				<img src="assets/learn1.svg" class="bannerpic learnbannerpic">
-				<div class="rightbannertitle"><p>Learn</p></div>
-				<div class="rightbannertext"><p>Choose from a range of topics to learn everything you need to know about financial literacy!</p></div>
-			</div>
-
-		</div>
-
-		<div id="cta">
-			<div id="ctatitle">
-				<p>Get early access.</p>
-			</div>
-
-			<div id="email">
-
-				<div id="mc_embed_signup">
-					<form action="https://credit.us4.list-manage.com/subscribe/post?u=a5cbed8d10629eb73791bf1b9&amp;id=891988c123" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						<div id="mc_embed_signup_scroll">
-						<label for="mce-EMAIL"></label>
-						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address" required>
-						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a5cbed8d10629eb73791bf1b9_891988c123" tabindex="-1" value=""></div>
-						<div class="clear"><input type="submit" value="Join Waitlist" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-
-		<div id="footer">
-			<div id="footercontainer">
-				<div class="footercolumn">
-					<div class="footersection"><p>COMPANY</p></div>
-					<div class="footeroption"><a href="about.html"><p>About</p></a></div>
-					                                                            <div class="footeroption"><a href="how.html"><p>How It Works</p></a></div>
-				</div>
-
-				<div class="footercolumn">
-					<div class="footersection"><p>RESOURCES</p></div>
-					<div class="footeroption"><a href="privacy.html"><p>Privacy Policy</p></a></div>
-					<div class="footeroption"><a href="tos.html"><p>Terms of Use</p></a></div>
-					<div class="footeroption"><a href="mailto:mike@hatch.credit"><p>Contact Us</p></a></div>
-				</div>
-	
-				<div class="footercolumn">
-					<div class="footersection"><p>FOLLOW US</p></div>
-					<div class="footeroption"><a target="_blank" href="https://www.facebook.com/Perch-Build-Credit-100765945008300/"><p>Facebook</p></a></div>
-					<div class="footeroption"><a target="_blank" href="https://www.instagram.com/perch.credit/"><p>Instagram</p></a></div>
-					<div class="footeroption"><a target="_blank" href="https://www.linkedin.com/company/hatch-credit/"><p>LinkedIn</p></a></div>
-				</div>
-
-				<div class="footercolumn">
-				</div>
-
-				<div class="footercolumn">
-				</div>
-
-				<div class="footercolumn">
-				</div>
-
-				<div class="footercolumn">
-					<!-- <div class="footersection"><p>GET PERCH</p></div>
-					<img src="assets/appstore.svg" class="footerpic">
-					<img src="assets/googleplay.svg" class="footerpic"> -->
-				</div>
-
-			</div>
-
-		</div>
-	</div>
-
-	
 </body>
 
-<script>
-function toggleMenu(){
-	if(document.getElementById("hamburger-menu").style.display == "none"){
-		document.getElementById("hamburger-menu").style.display = "flex"
-	}
-	else{
-		document.getElementById("hamburger-menu").style.display = "none"
-	}
-}
-</script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 
 </html>                                           
