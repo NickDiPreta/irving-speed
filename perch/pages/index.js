@@ -1,28 +1,13 @@
-import Head from "next/head";
+import Layout from "../components/layout";
+import indexStyles from "../styles/index.module.css";
 
-export default function Home() {
+const index = () => {
   return (
-    <div>
-      <Head>
-        <title>Perch</title>
-        <link rel="stylesheet" href="/static/styles/reset.css" />
-        <link rel="stylesheet" href="/static/styles/style.css" />
-        <link rel="stylesheet" href="/static/styles/mobile-style.css" />
-        <link rel="icon" href="/static/assets/perchlogo.svg" />
-
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content="Build credit fast- all it takes is paying your rent. We'll handle the rest."
-        />
-
-        <script type="text/javascript" src="/static/js/inspectlet.js" />
-      </Head>
-      <div id="container">
-        <img id="logo" src="/static/assets/perchlogo.svg" />
-
-        <div id="text">
-          <div id="title">
+    <Layout title="Perch">
+      <div className={indexStyles.container}>
+        <img className="logo" src="/static/assets/perchlogo.svg" />
+        <div className="text">
+          <div className="title">
             <section className="cd-intro">
               <h1 className="cd-headline push">
                 <span className="cd-text">Build credit</span>
@@ -36,14 +21,14 @@ export default function Home() {
             </section>
           </div>
 
-          <div id="subtitle">
+          <div className="subtitle">
             <p>
               Perch allows you to use recurring expenses as credit history to
               instantly boost your credit score.
             </p>
           </div>
 
-          <div id="cta">
+          <div className="cta">
             <a
               className="typeform-share link"
               href="https://form.typeform.com/to/rkH7jDUt"
@@ -51,21 +36,20 @@ export default function Home() {
               target="_blank"
             >
               <p className="cta-text">Join the waitlist</p>
-              <img id="arrow" src="/static/assets/arrow.png" />
+              <img className="arrow" src="/static/assets/arrow.png" />
             </a>
             <script type="text/javascript" src="/static/js/form.js"></script>
           </div>
         </div>
-
-        <div id="images">
-          <img id="landing" src="/static/assets/landing-mockup.png" />
-          <img id="month" src="/static/assets/months-reported.png" />
-          <img id="transactions" src="/static/assets/transactions.png" />
-        </div>
       </div>
 
-      <script src="/static/js/jquery-2.1.1.js"></script>
-      <script src="/static/js/main.js"></script>
-    </div>
+      <div className="images">
+        <img className="landing" src="/static/assets/landing-mockup.png" />
+        <img className="month" src="/static/assets/months-reported.png" />
+        <img className="transactions" src="/static/assets/transactions.png" />
+      </div>
+    </Layout>
   );
-}
+};
+
+export default index;

@@ -1,85 +1,21 @@
-/* -------------------------------- 
-
-Fonts
-
--------------------------------- */
-@font-face {
-  font-family: "Gilroy-Regular";
-  src: url("../assets/Gilroy/gilroy-regular.woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Gilroy-Bold";
-  src: url("../assets/Gilroy/gilroy-bold.woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  font-size: 80.5%;
-}
-
-body {
-  background-color: #ffffff;
-}
-
-#container {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  background-image: url("../assets/background.png");
-  background-size: 100% auto;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-}
-
-.cd-text {
-  color: #2c2261;
-}
-
-.cta-text {
-  color: #907cff;
-}
-
 @media only screen and (min-width: 768px) {
-  #logo {
+  .logo {
     width: 15%;
     height: auto;
     margin-top: 7rem;
     margin-left: 10%;
   }
-}
-@media only screen and (min-width: 1170px) {
-  #logo {
-    width: 7%;
-    height: auto;
-    margin-top: 6rem;
-    margin-left: 10%;
-  }
-}
 
-@media only screen and (min-width: 768px) {
-  #text {
+  @media only screen and (min-width: 1170px) {
+    .logo {
+      width: 7%;
+      height: auto;
+      margin-top: 6rem;
+      margin-left: 10%;
+    }
+  }
+
+  .text {
     width: 65%;
     height: auto;
     margin-left: 10%;
@@ -88,7 +24,7 @@ body {
   }
 
   @media only screen and (min-width: 1170px) {
-    #text {
+    .text {
       width: 45%;
       height: auto;
       margin-left: 10%;
@@ -97,12 +33,12 @@ body {
     }
   }
 
-  #title {
+  .title {
     width: 100%;
     float: left;
   }
 
-  #subtitle {
+  .subtitle {
     width: 80%;
     font-size: 1rem;
     font-family: "Gilroy-Regular", sans-serif;
@@ -112,7 +48,7 @@ body {
   }
 
   @media only screen and (min-width: 768px) {
-    #subtitle {
+    .subtitle {
       margin-top: 3rem;
       width: 90%;
       font-size: 1.4rem;
@@ -121,26 +57,26 @@ body {
     }
   }
   @media only screen and (min-width: 1170px) {
-    #subtitle {
+    .subtitle {
       margin-top: 3rem;
       font-size: 1.8rem;
       line-height: 2.6rem;
     }
   }
 
-  #cta {
+  .cta {
     width: 100%;
     font-size: 1.6rem;
     font-family: "Gilroy-Bold", sans-serif;
     float: left;
   }
 
-  #cta p {
+  .cta p {
     float: left;
   }
 
   @media only screen and (min-width: 768px) {
-    #cta {
+    .cta {
       margin-top: 4rem;
       font-size: 2.8rem;
       line-height: 3.6rem;
@@ -148,42 +84,32 @@ body {
     }
   }
   @media only screen and (min-width: 1170px) {
-    #cta {
+    .cta {
       margin-top: 4rem;
       font-size: 2.8rem;
       line-height: 3.6rem;
     }
   }
 
-  #arrow {
+  .arrow {
     width: 10%;
     height: auto;
     float: none;
   }
 
   @media only screen and (min-width: 768px) {
-    #arrow {
+    .arrow {
       width: 7%;
       margin-left: 2rem;
       float: none;
     }
   }
   @media only screen and (min-width: 1170px) {
-    #arrow {
+    .arrow {
       width: 7%;
       margin-left: 2rem;
       float: none;
     }
-  }
-
-  section {
-    font-family: "Gilroy-Bold", sans-serif;
-    font-weight: 700;
-    color: #907cff;
-  }
-
-  a {
-    text-decoration: none;
   }
 
   .cd-title {
@@ -259,10 +185,10 @@ body {
   }
 
   /* -------------------------------- 
-
-xpush 
-
--------------------------------- */
+  
+  xpush 
+  
+  -------------------------------- */
   .cd-headline.push b {
     opacity: 0;
   }
@@ -388,27 +314,27 @@ xpush
   }
 
   /* -------------------------------- 
+  
+  images 
+  
+  -------------------------------- */
 
-images 
-
--------------------------------- */
-
-  #images {
+  .images {
     visibility: hidden;
   }
 
   @media only screen and (min-width: 768px) {
-    #images {
+    .images {
       visibility: visible;
     }
   }
   @media only screen and (min-width: 1170px) {
-    #images {
+    .images {
       visibility: visible;
     }
   }
 
-  #sub {
+  .sub {
     width: 20%;
     height: auto;
     position: absolute;
@@ -418,7 +344,7 @@ images
   }
 
   @media only screen and (min-width: 768px) {
-    #sub {
+    .sub {
       width: 32%;
       height: auto;
       position: absolute;
@@ -428,7 +354,7 @@ images
     }
   }
   @media only screen and (min-width: 1170px) {
-    #sub {
+    .sub {
       width: 20%;
       height: auto;
       position: absolute;
@@ -438,7 +364,7 @@ images
     }
   }
 
-  #landing {
+  .landing {
     width: 22%;
     height: auto;
     position: absolute;
@@ -448,7 +374,7 @@ images
   }
 
   @media only screen and (min-width: 768px) {
-    #landing {
+    .landing {
       width: 33%;
       height: auto;
       position: absolute;
@@ -458,7 +384,7 @@ images
     }
   }
   @media only screen and (min-width: 1170px) {
-    #landing {
+    .landing {
       width: 22%;
       height: auto;
       position: absolute;
@@ -468,7 +394,7 @@ images
     }
   }
 
-  #month {
+  .month {
     width: 22%;
     height: auto;
     position: absolute;
@@ -478,7 +404,7 @@ images
   }
 
   @media only screen and (min-width: 768px) {
-    #month {
+    .month {
       width: 34%;
       height: auto;
       position: absolute;
@@ -488,7 +414,7 @@ images
     }
   }
   @media only screen and (min-width: 1170px) {
-    #month {
+    .month {
       width: 22%;
       height: auto;
       position: absolute;
@@ -498,7 +424,7 @@ images
     }
   }
 
-  #transactions {
+  .transactions {
     width: 21%;
     height: auto;
     position: absolute;
@@ -508,7 +434,7 @@ images
   }
 
   @media only screen and (min-width: 768px) {
-    #transactions {
+    .transactions {
       width: 30%;
       height: auto;
       position: absolute;
@@ -518,7 +444,7 @@ images
     }
   }
   @media only screen and (min-width: 1170px) {
-    #transactions {
+    .transactions {
       width: 21%;
       height: auto;
       position: absolute;

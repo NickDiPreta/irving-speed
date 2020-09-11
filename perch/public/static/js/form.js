@@ -1,8 +1,6 @@
 (function () {
-  var qs,
-    js,
+  var js,
     q,
-    s,
     d = document,
     gi = d.getElementById,
     ce = d.createElement,
