@@ -1,0 +1,120 @@
+
+image: docker:latest
+
+variables:
+  APP_REPOSITORY_URL_STAGE: 447866867700.dkr.ecr.us-west-2.amazonaws.com/stage/irving/app
+  APP_REPOSITORY_URL_PROD: 447866867700.dkr.ecr.us-west-2.amazonaws.com/prod/irving/app
+
+services:
+  - postgres:latest
+
+stages:
+  - build
+  - test
+  - deploy
+  - kube
+
+cache:
+  paths:
+    - build
+    - deployments/cdk/dist
+
+## CI Jobs ############
+
+build-cdk8-staging:
+  stage: build
+  image: node:latest
+  before_script:
+    - npm install -g typescript
+  script: 
+    - cd deployments/cdk/
+    - npm install
+    - npm run compile
+    - mkdir -p dist
+    - node out/src/staging.js
+  environment:
+    name: staging
+  only:
+    - develop
+
+build-cdk8-production:
+  stage: build
+  image: node:latest
+  before_script:
+    - npm install -g typescript
+  script: 
+    - cd deployments/cdk/
+    - npm install
+    - npm run compile
+    - mkdir -p dist
+    - node out/src/production.js
+  environment:
+    name: production
+  only:
+    - master
+
+deploy-staging:
+  stage: deploy
+  services:
+    - docker:dind
+  before_script:
+    - apk add --no-cache curl jq python3 py-pip
+    - pip install awscli
+  script:
+    - $(aws ecr get-login --no-include-email --region us-west-2)
+    - docker pull $APP_REPOSITORY_URL_STAGE:latest || true
+    - docker build -f ./deployments/Dockerfile --cache-from $APP_REPOSITORY_URL_STAGE:latest -t $APP_REPOSITORY_URL_STAGE:$CI_COMMIT_SHA -t $APP_REPOSITORY_URL_STAGE:latest .
+    - docker push $APP_REPOSITORY_URL_STAGE:$CI_COMMIT_SHA
+    - docker push $APP_REPOSITORY_URL_STAGE:latest
+  environment:
+    name: staging
+  only:
+  - develop
+
+deploy-production:
+  stage: deploy
+  services:
+    - docker:dind
+  before_script:
+    - apk add --no-cache curl jq python3 py-pip
+    - pip install awscli
+  script:
+    - $(aws ecr get-login --no-include-email --region us-west-2)
+    - docker pull $APP_REPOSITORY_URL_PROD:latest || true
+    - docker build -f ./deployments/Dockerfile --cache-from $APP_REPOSITORY_URL_PROD:latest -t $APP_REPOSITORY_URL_PROD:$CI_COMMIT_SHA -t $APP_REPOSITORY_URL_PROD:latest .
+    - docker push $APP_REPOSITORY_URL_PROD:$CI_COMMIT_SHA
+    - docker push $APP_REPOSITORY_URL_PROD:latest
+  environment:
+    name: production
+  only:
+  - master
+
+kube-staging:
+  stage: kube
+  image:
+    name: bitnami/kubectl:1.16
+    entrypoint: [""]
+  script:
+    - kubectl cluster-info
+    - kubectl config set-context --current --namespace=default
+    - kubectl apply -f deployments/cdk/dist/irving.k8s.yaml
+    - kubectl rollout restart deployment irving-app-deployment
+  environment:
+    name: staging
+  only:
+    - develop
+
+kube-production:
+  stage: kube
+  image:
+    name: bitnami/kubectl:1.16
+    entrypoint: [""]
+  script:
+    - kubectl cluster-info
+    - kubectl config set-context --current --namespace=default
+    - kubectl apply -f deployments/cdk/dist/irving.k8s.yaml
+    - kubectl rollout restart deployment irving-app-deployment
+  environment:
+    name: production
+  only:
+    - master
