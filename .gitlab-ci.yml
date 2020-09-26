@@ -44,7 +44,7 @@ build-cdk8-production:
     - npm install -g typescript
   script: 
     - cd deployments/cdk/
-    - ls -a
+    - ls cdk-toolkit
     - npm install
     - npm run compile
     - mkdir -p dist
