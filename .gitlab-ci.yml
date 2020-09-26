@@ -19,41 +19,6 @@ cache:
     - build
     - deployments/cdk/dist
 
-## CI Jobs ############
-
-build-cdk8-staging:
-  stage: build
-  image: node:latest
-  before_script:
-    - npm install -g typescript
-  script: 
-    - cd deployments/cdk/
-    - npm install
-    - npm run compile
-    - mkdir -p dist
-    - node out/src/staging.js
-  environment:
-    name: staging
-  only:
-    - develop
-
-build-cdk8-production:
-  stage: build
-  image: node:latest
-  before_script:
-    - npm install -g typescript
-  script: 
-    - cd deployments/cdk/
-    - ls cdk-toolkit
-    - npm install
-    - npm run compile
-    - mkdir -p dist
-    - node out/src/production.js
-  environment:
-    name: production
-  only:
-    - master
-
 deploy-staging:
   stage: deploy
   services:
@@ -89,33 +54,3 @@ deploy-production:
     name: production
   only:
   - master
-
-kube-staging:
-  stage: kube
-  image:
-    name: bitnami/kubectl:1.16
-    entrypoint: [""]
-  script:
-    - kubectl cluster-info
-    - kubectl config set-context --current --namespace=default
-    - kubectl apply -f deployments/cdk/dist/irving.k8s.yaml
-    - kubectl rollout restart deployment irving-app-deployment
-  environment:
-    name: staging
-  only:
-    - develop
-
-kube-production:
-  stage: kube
-  image:
-    name: bitnami/kubectl:1.16
-    entrypoint: [""]
-  script:
-    - kubectl cluster-info
-    - kubectl config set-context --current --namespace=default
-    - kubectl apply -f deployments/cdk/dist/irving.k8s.yaml
-    - kubectl rollout restart deployment irving-app-deployment
-  environment:
-    name: production
-  only:
-    - master
