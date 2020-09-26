@@ -28,6 +28,7 @@ build-cdk8-staging:
     - npm install -g typescript
   script: 
     - cd deployments/cdk/
+    - echo "test"
     - ls -a
     - npm install
     - npm run compile
