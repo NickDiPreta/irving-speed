@@ -35,7 +35,7 @@ const index = () => {
               data-mode="popup"
               target="_blank"
             >
-              <p className="cta-text">Join the waitlist</p>
+              <p className={indexStyles.ctaText}>Join the waitlist</p>
               <img className="arrow" src="/static/assets/arrow.png" />
             </a>
             <script type="text/javascript" src="/static/js/form.js"></script>
