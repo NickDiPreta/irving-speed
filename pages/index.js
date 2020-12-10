@@ -4,6 +4,7 @@ import indexStyles from "../styles/index.module.css";
 const index = () => {
   return (
     <Layout title="Perch">
+    
       <div className={indexStyles.container}>
         <img className="logo" src="/static/assets/perchlogo.svg" />
         <div className="text">
@@ -41,13 +42,17 @@ const index = () => {
             <script type="text/javascript" src="/static/js/form.js"></script>
           </div>
         </div>
+        
       </div>
-
+      
       <div className="images">
         <img className="landing" src="/static/assets/landing-mockup.png" />
         <img className="month" src="/static/assets/months-reported.png" />
         <img className="transactions" src="/static/assets/transactions.png" />
+        
       </div>
+      <p className={indexStyles.footer}><a href="/privacy">Privacy Policy</a> | <a href="/tos">Terms of Service</a></p>
+      
     </Layout>
   );
 };
