@@ -51,7 +51,8 @@ const index = () => {
         <img className="transactions" src="/static/assets/transactions.png" />
         
       </div>
-      <p className={indexStyles.footer}><a href="/privacy">Privacy Policy</a></p>
+      <p className={indexStyles.footer}><a href="/privacy">Privacy Policy</a> | <a href="/tos">Terms of Service</a></p>
+      
     </Layout>
   );
 };
