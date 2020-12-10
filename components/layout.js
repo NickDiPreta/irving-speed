@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+
 const Layout = ({ children, title }) => {
   return (
     <div>
@@ -16,6 +17,7 @@ const Layout = ({ children, title }) => {
         <script type="text/javascript" src="/static/js/inspectlet.js" />
       </Head>
       {children}
+      
       <script src="/static/js/jquery-2.1.1.js"></script>
       <script src="/static/js/main.js"></script>
     </div>
