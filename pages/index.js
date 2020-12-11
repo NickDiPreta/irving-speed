@@ -1,11 +1,13 @@
 import Layout from "../components/layout";
 import indexStyles from "../styles/index.module.css";
+import Pixel from '../components/Pixel';
 
 const index = () => {
   return (
     <Layout title="Perch">
     
       <div className={indexStyles.container}>
+      <Pixel name='FACEBOOK_PIXEL_1' />
         <img className="logo" src="/static/assets/perchlogo.svg" />
         <div className="text">
           <div className="title">
