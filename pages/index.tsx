@@ -15,6 +15,7 @@ import RevolvingText from '../components/RevolvingText'
 import { StaticText } from '../components/StaticText'
 import { Subtitle } from '../components/Subtitle'
 import { main } from '../styles/home'
+import NoSSR from 'react-no-ssr'
 
 const Home = (): JSX.Element => {
   useEffect(() => {
@@ -54,133 +55,131 @@ const Home = (): JSX.Element => {
   }, [])
 
   return (
-    <div>
-      <Header title={metaTitle} />
-      <div className="outer-container">
-        <main>
-          <style jsx>{main}</style>
+    <NoSSR>
+      <div>
+        <Header title={metaTitle} />
+        <div className="outer-container">
+          <main>
+            <style jsx>{main}</style>
 
-          <HomepageNav
-            setButton={setButton}
-            handleClick={handleClick}
+            <HomepageNav setButton={setButton} handleClick={handleClick} />
+            {dropdown ? (
+              <div className="dropmenu-home">
+                <ul className="options-dropdown">
+                  <div className="nav-top">
+                    <div className="nav-logo">
+                      <img src="static/perchlogo.svg" />
+                    </div>
 
-          />
-          {dropdown ? (
-            <div className="dropmenu-home">
-              <ul className="options-dropdown">
-                <div className="nav-top">
-                  <div className="nav-logo">
-                    <img src="static/perchlogo.svg" />
+                    <img
+                      onClick={handleClick}
+                      className="x-icon pointer"
+                      src="static/x-mark.svg"
+                    />
                   </div>
 
-                  <img
-                    onClick={handleClick}
-                    className="x-icon pointer"
-                    src="static/x-mark.svg"
-                  />
-                </div>
-
-                <Link href="/about">
-                  <li className="pointer">About</li>
-                </Link>
-                <Link href="faq">
-                  <li className="pointer">FAQ</li>
-                </Link>
-                <li className="drop-menu pointer">
-                  <Link href="https://apps.apple.com/us/app/perch-credit/id1516209753">
-                    <button>Get Perch</button>
+                  <Link href="/about">
+                    <li className="pointer">About</li>
                   </Link>
-                </li>
-              </ul>
-            </div>
-          ) : (
-            ''
-          )}
-          <div className="blocks">
-            <div className="blockOne">
-              <div className="left-one">
-                <HomePageTitle />
-                <AnimatePresence onExitComplete={() => handleCycle()}>
-                  {show && <RevolvingText text={text} />}
-                </AnimatePresence>
-                <Subtitle
-                  alignment="left"
-                  text="Use recurring expenses to boost your credit score instantly with Perch."
-                />
-                <Link href="https://apps.apple.com/us/app/perch-credit/id1516209753">
-                  <img
-                    className="app-store-logo"
-                    src="/static/app-store-logo.svg"
-                  />
-                </Link>
-              </div>
-              <div className="right-one">
-                <img src="/static/asset1.png" />
-              </div>
-            </div>
-            {button ? (
-              <div className="button-container">
-                <Link href="https://apps.apple.com/us/app/perch-credit/id1516209753">
-                  <button className="sticky-button">Get Perch</button>
-                </Link>
+                  <Link href="faq">
+                    <li className="pointer">FAQ</li>
+                  </Link>
+                  <li className="drop-menu pointer">
+                    <Link href="https://apps.apple.com/us/app/perch-credit/id1516209753">
+                      <button>Get Perch</button>
+                    </Link>
+                  </li>
+                </ul>
               </div>
             ) : (
               ''
             )}
+            <div className="blocks">
+              <div className="blockOne">
+                <div className="left-one">
+                  <HomePageTitle />
+                  <AnimatePresence onExitComplete={() => handleCycle()}>
+                    {show && <RevolvingText text={text} />}
+                  </AnimatePresence>
+                  <Subtitle
+                    alignment="left"
+                    text="Use recurring expenses to boost your credit score instantly with Perch."
+                  />
+                  <Link href="https://apps.apple.com/us/app/perch-credit/id1516209753">
+                    <img
+                      className="app-store-logo"
+                      src="/static/app-store-logo.svg"
+                    />
+                  </Link>
+                </div>
+                <div className="right-one">
+                  <img src="/static/asset1.png" />
+                </div>
+              </div>
+              {button ? (
+                <div className="button-container">
+                  <Link href="https://apps.apple.com/us/app/perch-credit/id1516209753">
+                    <button className="sticky-button">Get Perch</button>
+                  </Link>
+                </div>
+              ) : (
+                ''
+              )}
 
-            <div className="blockTwo">
-              <OverviewBlock
-                imageHeight={74}
-                imageWidth={60}
-                image="/static/setup-icon.svg"
-                text="Quick & Easy Setup"
-                subtext="Start your credit building journey in as little as 5 minutes"
-              />
-              <OverviewBlock
-                imageHeight={53}
-                imageWidth={105}
-                image="/static/credit-icon.svg"
-                text="Automate credit building"
-                subtext="Increase your score month to month without changing your lifestyle"
-              />
-              <OverviewBlock
-                imageHeight={50}
-                imageWidth={69}
-                image="/static/secure-icon.svg"
-                text="Keep all your data safe"
-                subtext="We secure all sensitive information using 256-bit encryption"
-              />
-            </div>
-            <FeaturedIn />
-            <div className="blockThree">
-              <div className="left-two">
-                <StaticText
-                  align="center;"
-                  lineOne="Build credit with"
-                  lineTwo="subscriptions"
+              <div className="blockTwo">
+                <OverviewBlock
+                  imageHeight={74}
+                  imageWidth={60}
+                  image="/static/setup-icon.svg"
+                  text="Quick & Easy Setup"
+                  subtext="Start your credit building journey in as little as 5 minutes"
                 />
-                <Subtitle
-                  alignment="center"
-                  text="Perch allows you to build your credit using your recurring expenses like Netflix, Hulu, Spotify, and Apple Music."
+                <OverviewBlock
+                  imageHeight={53}
+                  imageWidth={105}
+                  image="/static/credit-icon.svg"
+                  text="Automate credit building"
+                  subtext="Increase your score month to month without changing your lifestyle"
+                />
+                <OverviewBlock
+                  imageHeight={50}
+                  imageWidth={69}
+                  image="/static/secure-icon.svg"
+                  text="Keep all your data safe"
+                  subtext="We secure all sensitive information using 256-bit encryption"
                 />
               </div>
-              <div className="right-two">
-                <img src="/static/Frame.svg" />
+              <FeaturedIn />
+              <div className="blockThree">
+                <div className="left-two">
+                  <StaticText
+                    align="center;"
+                    lineOne="Build credit with"
+                    lineTwo="subscriptions"
+                  />
+                  <Subtitle
+                    alignment="center"
+                    text="Perch allows you to build your credit using your recurring expenses like Netflix, Hulu, Spotify, and Apple Music."
+                  />
+                </div>
+                <div className="right-two">
+                  <img src="/static/Frame.svg" />
+                </div>
               </div>
-            </div>
 
-            {isDesktop ? <BlockFourDesktop /> : <BlockFourMobile />}
-          </div>
-          <InvestorsBlock />
-          <div className="SFF-Block">
-            <span>Safe. Fast. Free.</span>
-            <br />
-            <AdjectiveBlock />
-          </div>
-          <Footer />
-        </main>
+              {isDesktop ? <BlockFourDesktop /> : <BlockFourMobile />}
+            </div>
+            <InvestorsBlock />
+            <div className="SFF-Block">
+              <span>Safe. Fast. Free.</span>
+              <br />
+              <AdjectiveBlock />
+            </div>
+            <Footer />
+          </main>
+        </div>
       </div>
-    </div>
+    </NoSSR>
   )
 }
 
