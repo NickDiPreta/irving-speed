@@ -23,7 +23,7 @@ export const ExpandedInvestorsBlock: React.FC<ExpandedInvestorsBlockProps> = ({}
         </div>
 
         <div>
-          <img src="/static/investor-icons/KleinerPerkins.png" />
+          <img src="/static/investor-icons/concrete-rose.png" />
         </div>
 
         <div>
@@ -53,6 +53,8 @@ export const ExpandedInvestorsBlock: React.FC<ExpandedInvestorsBlockProps> = ({}
         <div>
           <img src="/static/investor-icons/mvp_logo.png" />
         </div>
+       
+        
       </ul>
       <style jsx>{`
         ul {
@@ -60,6 +62,7 @@ export const ExpandedInvestorsBlock: React.FC<ExpandedInvestorsBlockProps> = ({}
           flex-wrap: wrap;
           justify-content: flex-end;
           margin-top: 80px;
+          align-items: center;
         }
         div {
           width: 24%;
