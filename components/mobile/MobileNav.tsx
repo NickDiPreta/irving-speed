@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 interface MobileNavProps {}
 
-export const MobileNav: React.FC<MobileNavProps> = ({}) => {
+const MobileNav: React.FC<MobileNavProps> = ({}) => {
   return (
     <nav>
       <div className="nav-left">
@@ -117,3 +117,5 @@ export const MobileNav: React.FC<MobileNavProps> = ({}) => {
     </nav>
   )
 }
+
+export default MobileNav

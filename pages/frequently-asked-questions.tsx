@@ -2,38 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { AccordionTab } from '../components/faq/AccordionTab'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
-import { MobileNav } from '../components/mobile/MobileNav'
+import MobileNav from '../components/mobile/MobileNav'
 import { main } from '../styles/home'
 
 interface faqProps {}
 
 const faq: React.FC<faqProps> = ({}) => {
-  useEffect(() => {
-    window.addEventListener('resize', setDesktop(window.innerWidth > 600))
-    return () =>
-      window.removeEventListener('resize', setDesktop(window.innerWidth > 600))
-  })
-
-  const [show, setShow] = useState(true)
-  const [dropdown, setDropdown] = useState(false)
-  const [button, setButton] = useState(false)
-  const [isDesktop, setDesktop] = useState(false)
-
-  const handleClick = () => {
-    setDropdown(!dropdown)
-  }
-
-  const handleCycle = () => {
-    setShow(true)
-    setTimeout(() => {
-      setShow(false)
-    }, 1500)
-  }
-
-  useEffect(() => {
-    handleCycle()
-  }, [])
-
   return (
     <main>
       <Header title="Frequently Asked Questions" />

@@ -16,14 +16,9 @@ import { StaticText } from '../components/StaticText'
 import { Subtitle } from '../components/Subtitle'
 import { main } from '../styles/home'
 import NoSSR from 'react-no-ssr'
+import MobileNav from '../components/mobile/MobileNav'
 
 const Home = (): JSX.Element => {
-  useEffect(() => {
-    window.addEventListener('resize', setDesktop(window.innerWidth > 600))
-    return () =>
-      window.removeEventListener('resize', setDesktop(window.innerWidth > 600))
-  })
-
   const metaTitle = 'Perch Credit'
   const [text, cycleText] = useCycle(
     'Rent',
@@ -62,38 +57,8 @@ const Home = (): JSX.Element => {
           <main>
             <style jsx>{main}</style>
 
-            <HomepageNav setButton={setButton} handleClick={handleClick} />
-            {dropdown ? (
-              <div className="dropmenu-home">
-                <ul className="options-dropdown">
-                  <div className="nav-top">
-                    <div className="nav-logo">
-                      <img src="static/perchlogo.svg" />
-                    </div>
+            <MobileNav />
 
-                    <img
-                      onClick={handleClick}
-                      className="x-icon pointer"
-                      src="static/x-mark.svg"
-                    />
-                  </div>
-
-                  <Link href="/about">
-                    <li className="pointer">About</li>
-                  </Link>
-                  <Link href="faq">
-                    <li className="pointer">FAQ</li>
-                  </Link>
-                  <li className="drop-menu pointer">
-                    <Link href="https://apps.apple.com/us/app/perch-credit/id1516209753">
-                      <button>Get Perch</button>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            ) : (
-              ''
-            )}
             <div className="blocks">
               <div className="blockOne">
                 <div className="left-one">
