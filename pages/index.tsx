@@ -63,7 +63,7 @@ const Home = (): JSX.Element => {
           <HomepageNav
             setButton={setButton}
             handleClick={handleClick}
-            setButton={setButton}
+
           />
           {dropdown ? (
             <div className="dropmenu-home">
