@@ -1,13 +1,11 @@
 import React from 'react'
-import Image from 'next/image'
 
 interface LogoProps {}
 
 export const Logo: React.FC<LogoProps> = () => {
   return (
     <div>
-      <img />
-      <Image src="/static/perchlogo.svg" alt="Perch Logo" />
+      <img src="/static/perchlogo.svg" />
 
       <style jsx>{`
         img {
