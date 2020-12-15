@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Logo } from '../Logo'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface MobileNavProps {
   handleClick: () => void
@@ -44,7 +45,13 @@ export const HomepageNav: React.FC<MobileNavProps> = ({
             <div className="nav-logo pointer">
               <Link href="/">
                 <span className="pointer">
-                  <Logo />
+                  <Image
+                    src="/static/perchlogo.svg"
+                    alt="Perch Logo"
+                    priority={true}
+                    height={24}
+                    width={87}
+                  />
                 </span>
               </Link>
             </div>
